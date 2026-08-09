@@ -1,0 +1,489 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConfitecBIau | Dulces Momentos</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#ffffff;
+            color:#222;
+            line-height:1.6;
+        }
+
+        header{
+            background:linear-gradient(135deg,#c00000,#003c8f);
+            color:white;
+            text-align:center;
+            padding:30px 20px;
+        }
+
+        .logo{
+            width:220px;
+            height:220px;
+            border-radius:50%;
+            border:6px solid white;
+            object-fit:cover;
+            box-shadow:0 0 20px rgba(0,0,0,0.3);
+            margin-bottom:15px;
+        }
+
+        nav{
+            background:#003c8f;
+            padding:12px;
+            text-align:center;
+            position:sticky;
+            top:0;
+            z-index:100;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#ffdddd;
+        }
+
+        section{
+            padding:50px 20px;
+        }
+
+        .container{
+            max-width:1100px;
+            margin:auto;
+        }
+
+        h2{
+            color:#c00000;
+            margin-bottom:20px;
+            border-bottom:3px solid #003c8f;
+            display:inline-block;
+            padding-bottom:5px;
+        }
+
+        .card{
+            background:white;
+            border:2px solid #003c8f;
+            border-radius:15px;
+            padding:25px;
+            margin-bottom:25px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+        }
+
+        .item{
+            background:#f7f9ff;
+            border:2px solid #003c8f;
+            border-radius:12px;
+            padding:20px;
+            text-align:center;
+        }
+
+        .item h3{
+            color:#003c8f;
+            margin-bottom:10px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:15px;
+        }
+
+        th{
+            background:#003c8f;
+            color:white;
+            padding:12px;
+        }
+
+        td{
+            border:1px solid #ddd;
+            padding:10px;
+            text-align:center;
+        }
+
+        tr:nth-child(even){
+            background:#f2f6ff;
+        }
+
+        .extras{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:10px;
+            margin-top:15px;
+        }
+
+        .extra{
+            background:#eef4ff;
+            padding:12px;
+            border-left:5px solid #c00000;
+            border-radius:8px;
+        }
+
+        .contacto{
+            background:linear-gradient(135deg,#003c8f,#c00000);
+            color:white;
+            border-radius:15px;
+            padding:30px;
+        }
+
+        .contacto a{
+            color:#ffffff;
+            font-weight:bold;
+            text-decoration:none;
+        }
+
+        .btn{
+            display:inline-block;
+            background:white;
+            color:#c00000;
+            padding:12px 20px;
+            border-radius:8px;
+            text-decoration:none;
+            font-weight:bold;
+            margin-top:15px;
+        }
+
+        .btn:hover{
+            background:#f0f0f0;
+        }
+
+        footer{
+            background:#001f4d;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:600px){
+            nav a{
+                display:block;
+                margin:8px 0;
+            }
+
+            .logo{
+                width:180px;
+                height:180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo-confitecbiau.png" alt="Logo ConfitecBIau" class="logo">
+        <h1>🍬 ConfitecBIau 🍭</h1>
+        <p><strong>DULCES MOMENTOS</strong></p>
+        <p>Tu snack favorito, hecho con amor</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#productos">Productos</a>
+        <a href="#sistema">Sistema VB6</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio">
+        <div class="container">
+            <div class="card">
+                <h2>Bienvenidos</h2>
+                <p>
+                    <strong>ConfitecBIau</strong> es una confitería creada como proyecto
+                    empresarial orientado al área de informática. Nuestro objetivo es ofrecer
+                    dulces, postres y bebidas de calidad utilizando un sistema automatizado
+                    desarrollado en <strong>Visual Basic 6.0</strong> para mejorar la atención
+                    al cliente y el control de ventas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <div class="container">
+            <div class="card">
+                <h2>🏢 Quiénes Somos</h2>
+
+                <h3>Misión</h3>
+                <p>
+                    Ofrecer productos dulces y snacks de excelente calidad con un servicio
+                    rápido, organizado y apoyado por herramientas tecnológicas.
+                </p>
+
+                <h3>Visión</h3>
+                <p>
+                    Convertirnos en una confitería innovadora reconocida por integrar sistemas
+                    informáticos en la gestión de pedidos y ventas.
+                </p>
+
+                <h3>Valores</h3>
+                <ul>
+                    <li>Responsabilidad</li>
+                    <li>Creatividad</li>
+                    <li>Calidad</li>
+                    <li>Innovación tecnológica</li>
+                    <li>Atención al cliente</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="container">
+
+            <h2>🍫 Productos Principales</h2>
+
+            <div class="grid">
+                <div class="item">
+                    <h3>🍿 Palomitas</h3>
+                    <p>Snack clásico disponible en varios tamaños.</p>
+                </div>
+
+                <div class="item">
+                    <h3>🌮 Nachos</h3>
+                    <p>Crujientes y deliciosos.</p>
+                </div>
+
+                <div class="item">
+                    <h3>🥤 Gaseosa</h3>
+                    <p>Bebidas refrescantes para acompañar tus snacks.</p>
+                </div>
+
+                <div class="item">
+                    <h3>🌭 Hot Dog</h3>
+                    <p>Preparado con ingredientes frescos.</p>
+                </div>
+
+                <div class="item">
+                    <h3>🍿 Combo Cine</h3>
+                    <p>La combinación favorita de nuestros clientes.</p>
+                </div>
+            </div>
+
+            <br>
+
+            <h2>🍦 Postres y Cafetería</h2>
+
+            <div class="grid">
+                <div class="item">
+                    <h3>🍦 Helado</h3>
+                </div>
+
+                <div class="item">
+                    <h3>🥞 Crepas</h3>
+                </div>
+
+                <div class="item">
+                    <h3>☕ Café Americano</h3>
+                </div>
+
+                <div class="item">
+                    <h3>🥤 Frappé</h3>
+                </div>
+
+                <div class="item">
+                    <h3>🍭 Piruletas</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sistema">
+        <div class="container">
+
+            <div class="card">
+
+                <h2>💻 Sistema de Gestión en Visual Basic 6.0</h2>
+
+                <p>
+                    El sistema desarrollado en <strong>VB6</strong> permite automatizar
+                    el proceso de ventas de la confitería mediante menús desplegables,
+                    validaciones y cálculos automáticos.
+                </p>
+
+                <h3>📋 Productos y Precios</h3>
+
+                <table>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Pequeño</th>
+                        <th>Mediano</th>
+                        <th>Grande</th>
+                    </tr>
+                    <tr>
+                        <td>Palomitas</td>
+                        <td>L 15</td>
+                        <td>L 25</td>
+                        <td>L 35</td>
+                    </tr>
+                    <tr>
+                        <td>Nachos</td>
+                        <td>L 20</td>
+                        <td>L 30</td>
+                        <td>L 40</td>
+                    </tr>
+                    <tr>
+                        <td>Gaseosa</td>
+                        <td>L 10</td>
+                        <td>L 15</td>
+                        <td>L 20</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Dog</td>
+                        <td>L 18</td>
+                        <td>L 28</td>
+                        <td>L 38</td>
+                    </tr>
+                    <tr>
+                        <td>Combo Cine</td>
+                        <td>L 35</td>
+                        <td>L 50</td>
+                        <td>L 65</td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <h3>🎁 Combos Especiales</h3>
+
+                <table>
+                    <tr>
+                        <th>Combo</th>
+                        <th>Pequeño</th>
+                        <th>Mediano</th>
+                        <th>Grande</th>
+                    </tr>
+                    <tr>
+                        <td>Palomitas y Gaseosa</td>
+                        <td>L 22</td>
+                        <td>L 35</td>
+                        <td>L 50</td>
+                    </tr>
+                    <tr>
+                        <td>Nachos y Gaseosa</td>
+                        <td>L 27</td>
+                        <td>L 40</td>
+                        <td>L 55</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Dog y Gaseosa</td>
+                        <td>L 25</td>
+                        <td>L 38</td>
+                        <td>L 52</td>
+                    </tr>
+                    <tr>
+                        <td>Palomitas con Caramelo</td>
+                        <td>L 18</td>
+                        <td>L 28</td>
+                        <td>L 38</td>
+                    </tr>
+                    <tr>
+                        <td>Jugos Naturales</td>
+                        <td>L 12</td>
+                        <td>L 18</td>
+                        <td>L 25</td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <h3>➕ Extras Disponibles</h3>
+
+                <div class="extras">
+                    <div class="extra">🧀 Queso Extra (+L 4)</div>
+                    <div class="extra">🌶️ Jalapeños (+L 2)</div>
+                    <div class="extra">🥓 Tocino (+L 6)</div>
+                    <div class="extra">🍯 Caramelo Extra (+L 5)</div>
+                    <div class="extra">🧈 Mantequilla Extra (+L 3)</div>
+                    <div class="extra">🍫 Chocolate Derretido (+L 7)</div>
+                    <div class="extra">🍬 Toppings Dulces (+L 5)</div>
+                    <div class="extra">🌭 Salchicha Extra (+L 8)</div>
+                </div>
+
+                <br>
+
+                <h3>⚙️ Funciones del Sistema</h3>
+
+                <ul>
+                    <li>✔ Selección de productos mediante <strong>ComboBox</strong></li>
+                    <li>✔ Selección de tamaños (Pequeño, Mediano y Grande)</li>
+                    <li>✔ Agregar extras mediante <strong>CheckBox</strong></li>
+                    <li>✔ Validación de cantidades mayores a cero</li>
+                    <li>✔ Limpieza automática entre combos incompatibles</li>
+                    <li>✔ Cálculo automático del precio unitario</li>
+                    <li>✔ Cálculo del total de la compra</li>
+                    <li>✔ Interfaz amigable para atención al cliente</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+
+            <div class="contacto">
+
+                <h2 style="color:white;border-color:white;">📞 Contacto</h2>
+
+                <p><strong>📧 Correo:</strong>
+                    <a href="mailto:brandou833@gmail.com">brandou833@gmail.com</a>
+                </p>
+
+                <p><strong>📱 WhatsApp:</strong>
+                    <span style="background:white;color:#c00000;padding:4px 8px;border-radius:5px;">
+                        504 98258518
+                    </span>
+                </p>
+
+                <p><strong>📍 Ubicación:</strong> Honduras</p>
+
+                <p><strong>🕒 Horario:</strong> Lunes a Domingo | 8:00 a.m. - 8:00 p.m.</p>
+
+                <a class="btn"
+                   href="https://wa.me/50498258518"
+                   target="_blank">
+                    💬 Escribir por WhatsApp
+                </a>
+
+                <!--
+                EJEMPLO:
+                Si tu número es 98258518 cambia la línea por:
+                href="https://wa.me/50498258518"
+                -->
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            © 2026 <strong>ConfitecBIau</strong> |
+            Pagina Web Como Proyecto de Desarrollo Web :)
+        </p>
+    </footer>
+
+</body>
+</html>
+```
