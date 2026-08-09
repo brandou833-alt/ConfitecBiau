@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConfitecBIau - Confitería</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#fff4f8;
+            color:#333;
+        }
+
+        header{
+            background:#ff4fa0;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#ff86bf;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        .hero{
+            text-align:center;
+            padding:50px 20px;
+        }
+
+        .hero h2{
+            color:#ff2f8a;
+            margin-bottom:15px;
+            font-size:2.2em;
+        }
+
+        .contenedor{
+            width:90%;
+            max-width:1000px;
+            margin:auto;
+            padding:20px 0;
+        }
+
+        .card{
+            background:white;
+            border-radius:15px;
+            padding:20px;
+            margin-bottom:20px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .productos{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:20px;
+        }
+
+        .producto{
+            background:#ffe1ef;
+            padding:15px;
+            border-radius:12px;
+            text-align:center;
+        }
+
+        .producto h3{
+            color:#d6006d;
+            margin-bottom:10px;
+        }
+
+        footer{
+            background:#ff4fa0;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+
+        .boton{
+            display:inline-block;
+            background:#ff2f8a;
+            color:white;
+            padding:12px 20px;
+            border-radius:8px;
+            text-decoration:none;
+            margin-top:15px;
+        }
+
+        .boton:hover{
+            background:#d6006d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🍬 ConfitecBIau 🍭</h1>
+        <p>La dulzura que alegra tus momentos</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#productos">Productos</a>
+        <a href="#sistema">Sistema VB6</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <h2>Bienvenido a ConfitecBIau</h2>
+        <p>
+            Empresa dedicada a la venta de dulces, chocolates, gomitas,
+            postres y bebidas, utilizando un sistema desarrollado en
+            Visual Basic 6.0 para automatizar pedidos y mejorar la atención al cliente.
+        </p>
+        <a href="#productos" class="boton">Ver Productos</a>
+    </section>
+
+    <div class="contenedor">
+
+        <section class="card" id="nosotros">
+            <h2>🏢 Quiénes Somos</h2>
+            <p>
+                ConfitecBIau es una confitería creada como proyecto empresarial
+                orientado al área de informática. Nuestro objetivo es combinar
+                la tecnología con la atención al cliente mediante un sistema
+                automatizado de ventas y control de pedidos.
+            </p>
+
+            <h3>Misión</h3>
+            <p>Ofrecer productos dulces de calidad con un servicio rápido y organizado mediante herramientas tecnológicas.</p>
+
+            <h3>Visión</h3>
+            <p>Convertirnos en una confitería innovadora reconocida por integrar sistemas informáticos en la gestión de ventas.</p>
+        </section>
+
+        <section class="card" id="productos">
+            <h2>🍫 Nuestros Productos</h2>
+
+            <div class="productos">
+
+                <div class="producto">
+                    <h3>🍫 Chocolates</h3>
+                    <p>Chocolate oscuro, blanco y relleno.</p>
+                </div>
+
+                <div class="producto">
+                    <h3>🍬 Gomitas</h3>
+                    <p>Sabores frutales surtidos.</p>
+                </div>
+
+                <div class="producto">
+                    <h3>🍭 Paletas</h3>
+                    <p>Paletas de caramelo y frutas.</p>
+                </div>
+
+                <div class="producto">
+                    <h3>🍪 Brownies</h3>
+                    <p>Postre suave con cobertura de chocolate.</p>
+                </div>
+
+                <div class="producto">
+                    <h3>🍦 Helados</h3>
+                    <p>Vainilla, chocolate y fresa.</p>
+                </div>
+
+                <div class="producto">
+                    <h3>🥤 Frappés</h3>
+                    <p>Bebidas frías y refrescantes.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="card" id="sistema">
+            <h2>💻 Sistema de Gestión</h2>
+
+            <p>La empresa utiliza un programa desarrollado en <strong>Visual Basic 6.0</strong> que permite:</p>
+
+            <ul>
+                <li>✔ Selección de productos mediante ComboBox</li>
+                <li>✔ Selección de tamaños (Pequeño, Mediano y Grande)</li>
+                <li>✔ Agregar extras mediante CheckBox</li>
+                <li>✔ Cálculo automático del precio unitario</li>
+                <li>✔ Cálculo del total de la compra</li>
+                <li>✔ Validación de cantidades incorrectas</li>
+                <li>✔ Organización eficiente de pedidos</li>
+            </ul>
+
+            <p style="margin-top:15px;">
+                Este sistema demuestra la aplicación de la programación en la administración de una microempresa.
+            </p>
+        </section>
+
+        <section class="card" id="contacto">
+            <h2>📞 Contacto</h2>
+
+            <p><strong>Empresa:</strong> ConfitecBIau</p>
+            <p><strong>Ubicación:</strong> Honduras</p>
+            <p><strong>Teléfono:</strong> +504 9999-9999</p>
+            <p><strong>Correo:</strong> contacto@confitecbiau.com</p>
+
+            <a href="mailto:contacto@confitecbiau.com" class="boton">
+                Enviar Correo
+            </a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 ConfitecBIau | Proyecto de Gestión Empresarial orientada a Informática</p>
+    </footer>
+
+</body>
+</html>
